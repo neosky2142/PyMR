@@ -1,0 +1,8 @@
+# Creates chunck from twitter data
+# The file is huge : create subfiles of n_lines
+
+n_lines = 100000
+
+with open('/Users/lcambier/TempMapReduce/2014_04_28_tweets_from_stream_3.csv') as f:
+    for line in f:
+        <do something with line>

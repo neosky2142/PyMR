@@ -1,0 +1,11 @@
+and : 2
+do : 1
+like : 3
+i : 2
+awesome : 1
+bigdata : 2
+mapreduce : 2
+also : 1
+you : 2
+is : 1 
+really : 2
