@@ -1,5 +1,3 @@
-import time
-
 class ReducerSimilarity:
     def reduce(self,context):
         pict1Idx = int(context.key);
@@ -8,7 +6,6 @@ class ReducerSimilarity:
         pict2 = iterator.getNext()
         
         def computeSimilarity(pict1Idx,pict2Idx):
-            time.sleep(0.25); # waits 1/10 seconds
             return (abs(pict1Idx-pict2Idx)<=1)
     
         while pict2:

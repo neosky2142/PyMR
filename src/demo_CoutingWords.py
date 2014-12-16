@@ -8,19 +8,18 @@ theMapper = MapperCountingWords();
 theReducer = ReducerCountingWords();
 
 # parse the file : one word/line
-#inFiles = ['C:/mapReduceCountingWords/dataFile'];
-inFiles = ['files/dataFile'];
+inFiles = ['dataFiles/text'];
 
 # we can have more than one text file
-inFileParsed = 'files/dataFileParsed';
+inFileParsed = 'dataFiles/textParsed';
 FileHelper.transformTextIntoListOfWords(inFiles,inFileParsed)
 
 # MapReduce
-theMapReducer = MapReduce(theMapper,theReducer,[inFileParsed],silent=0,nThreads=5)
+theMapReducer = MapReduce(theMapper,theReducer,[inFileParsed],silent=-1,nThreads=5)
 resultDict = theMapReducer.execute()
 
 # Write output
-# outFileFirectory = 'C:/mapReduceCountingWords/'
-outFileFirectory = 'files/'
+
+outFileFirectory = 'outputs/'
 outfileName = 'coutingWordsResults.txt';
 FileHelper.writeDictionnary(outFileFirectory+outfileName,resultDict)
