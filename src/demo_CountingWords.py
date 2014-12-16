@@ -19,7 +19,6 @@ theMapReducer = MapReduce(theMapper,theReducer,[inFileParsed],silent=-1,nThreads
 resultDict = theMapReducer.execute()
 
 # Write output
-
 outFileFirectory = 'outputs/'
 outfileName = 'coutingWordsResults.txt';
 FileHelper.writeDictionnary(outFileFirectory+outfileName,resultDict)
