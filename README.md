@@ -1,7 +1,7 @@
 PyMR
 ====
 
-Python implementation of MapReduce (using a distributed files system)
+Python implementation of MapReduce (using a distributed files system). Created in the course of 'Questions spéciales de mathématiques discrètes : Big Data)' (LINMA2472), Université catholique de Louvain, Belgium.
 
 
 Documentation
